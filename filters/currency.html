@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+<meta charset="utf-8">
+<title></title>
+<script src="../js/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+
+<div  ng-controller="personCtrl">
+
+<p>The name is {{ amount | currency:"&#8377;" }}</p>
+
+</div>
+
+<script>
+
+angular.module('myApp', []).controller('personCtrl', function($scope) {
+    $scope.amount = 1000
+    
+});
+</script>
+</body>
+</html>
+

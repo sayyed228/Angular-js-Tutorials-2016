@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="../js/angular.min.js"></script>
+
+<style>
+.striped {
+    color:white;
+    background-color:black;
+}
+</style>
+</head>
+
+<body ng-app="myApp">
+<div ng-controller="myCtrl">
+
+<table width="200" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr ng-repeat="x in players" ng-class-even="'striped'">
+      <td>{{x.firstName}}</td>
+      <td>{{x.Place}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+</div>
+
+<script>
+
+var app = angular.module('myApp',[])
+
+app.controller('myCtrl',function($scope){
+	$scope.players = [{firstName:'Nazir',Place:'Mumbra'},{firstName:'Arif',Place:'Mumbra'},{firstName:'Ashraf',Place:'Mumbra'},{firstName:'Arfeem',Place:'Vikhroli'},{firstName:'Yasar',Place:'Mumbai'},{firstName:'Maseeha',Place:'Bandra'}]
+})	
+	
+	
+
+</script>
+  
+</body>
+</html>
+

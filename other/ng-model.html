@@ -1,0 +1,50 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+<meta charset="utf-8">
+<title  ng-controller="myCtrl">{{firstName+' '+lastName}}</title>
+<script src="angular.min.js"></script>
+</head>
+
+<body>
+
+<div ng-controller="myCtrl">
+ Name <input type="text" ng-model="name"/><br/><br/>
+ 
+ {{name}} <br/><br/>
+ 
+ <span ng-bind="name"></span>
+</div>
+
+
+<script>
+var app = angular.module('myApp',[]);
+
+app.controller('myCtrl',function($scope){
+$scope.name = 'Nazir Sayyed'	
+})
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- 
+
+
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.name = "John Doe";
+});
+</script>
+
+
+-->

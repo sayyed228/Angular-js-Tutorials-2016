@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="../js/angular.min.js"></script>
+</head>
+
+<body ng-app="">
+
+My favorite topic is:
+<select ng-model="myVar">
+  <option value="dogs">Dogs</option>
+  <option value="tuts">Tutorials</option>
+  <option value="cars">Cars</option>
+</select>
+
+
+<div ng-switch="myVar">
+  <div ng-switch-when="dogs">
+     <h1>Dogs</h1>
+     <p>Welcome to a world of dogs.</p>
+  </div>
+  <div ng-switch-when="tuts">
+     <h1>Tutorials</h1>
+     <p>Learn from examples.</p>
+  </div>
+  <div ng-switch-when="cars">
+     <h1>Cars</h1>
+     <p>Read about cars.</p>
+  </div>
+  <div ng-switch-default>
+     <h1>Switch</h1>
+     <p>Select topic from the dropdown, to switch the content of this DIV.</p>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>

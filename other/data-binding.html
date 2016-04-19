@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script src="angular.min.js"></script>
+<body ng-app="myApp">
+
+
+<div ng-controller="myCtrl"> 
+ <input type="text" ng-model="firstname">
+ {{firstname+' '+firstname}}
+</div>
+
+<div ng-app="">
+  <form>
+    Check to show a header:
+    <input type="checkbox" ng-model="myVar">
+  </form>
+  <h2 ng-show="myVar">My Header</h2>
+</div>
+
+<script>
+var app = angular.module('myApp',[]);
+app.controller('myCtrl',function($scope){
+	$scope.firstname = 'Nazir';
+});
+</script>
+</body>
+</html>

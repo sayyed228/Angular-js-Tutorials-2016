@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<script src="angular.min.js"></script>
+</head>
+
+<body ng-app="">
+
+
+<div ng-init="names=['Nazir','Sayyed','Asif','Shaikh']">
+<ul>
+	<li ng-repeat="x in names">
+     {{x}}
+    </li>
+</ul>
+		
+
+</div>
+
+
+<script>
+var app = angular.module('myApp',[]);
+app.controller('myCtrl',function($scope){
+$scope.firstName = 'Hello';
+$scope.lastName	 = 'World';
+})
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- 
+
+
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.name = "John Doe";
+});
+</script>
+
+
+-->

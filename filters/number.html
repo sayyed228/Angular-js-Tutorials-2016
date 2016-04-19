@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+<meta charset="utf-8">
+<title></title>
+<script src="../js/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+
+
+
+<div ng-controller="nCtrl">
+
+<h1>{{prize | number:2}}</h1>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('nCtrl', function($scope) {
+    $scope.prize = 1000000;
+});
+</script>
+
+<p>The prize is written as a string, but formatted as a number.</p>
+
+
+
+</body>
+</html>
+

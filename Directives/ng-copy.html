@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="../js/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+<div ng-controller="myCtrl">
+
+<button >Click Me</button>
+
+<input type="text" value="Hello world" ng-copy="copytext()">
+
+ <!-- {{firstName}} -->
+</div>
+
+<script>
+
+var app  = angular.module('myApp',[]);
+
+app.controller('myCtrl',function($scope){
+	$scope.copytext = function(){
+		alert('Text copied successfully!')
+		}
+	
+	})
+	
+	
+	
+
+</script>
+  
+</body>
+</html>
+

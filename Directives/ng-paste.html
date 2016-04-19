@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="../js/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+<div ng-controller="myCtrl">
+
+<button >Click Me</button>
+
+<input type="text" value="" ng-paste="pasteText()">
+
+ <!-- {{firstName}} -->
+</div>
+
+<script>
+
+var app  = angular.module('myApp',[]);
+
+app.controller('myCtrl',function($scope){
+	$scope.pasteText = function(){
+		alert('Text paste successfully!')
+		}
+	
+	})
+	
+	
+	
+
+</script>
+  
+</body>
+</html>
+

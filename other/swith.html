@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<script src="angular.min.js"></script>
+<body ng-app="">
+
+
+
+<input type="radio" ng-model="myVar" value="Dog"/>Dog
+<input type="radio" ng-model="myVar" value="Car"/>Car
+<input type="radio" ng-model="myVar" value="Bus"/>Bus
+
+
+<select ng-model="myVar">
+ <option value="Dog">Dog</option>
+ <option value="Car">Car</option>
+ <option value="Bus">Bus</option>
+</select>
+
+<div ng-switch="myVar">
+ <div ng-switch-when="Dog">
+ <h2>Dog is a pet animal</h2>
+ </div>
+ <div ng-switch-when="Car">
+ <h2>Car is mostly use for personal transportation</h2>
+ </div>
+  <div ng-switch-when="Bus">
+  <h2>Bus is mostly use for public transportation</h2>
+ </div>
+
+</div>
+
+<script>
+</script>
+</body>
+</html>

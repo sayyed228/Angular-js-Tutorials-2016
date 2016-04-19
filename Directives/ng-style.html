@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="../js/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+<div ng-controller="myCtrl">
+
+
+<div ng-style="obb">
+ Hello world
+</div>
+
+ {{firstName}} 
+
+
+
+
+</div>
+
+<script>
+
+var app = angular.module('myApp',[])
+
+app.controller('myCtrl',function($scope){
+//$scope.firstName = 'Nazir'
+
+$scope.obb = {'color':'red', 'border':'red solid 1px', 'padding':'20px', 'background':'blue'}
+//console.warn('Hello world')
+})
+	
+	
+	
+
+</script>
+  
+</body>
+</html>
+

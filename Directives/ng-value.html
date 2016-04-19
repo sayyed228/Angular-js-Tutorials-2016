@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="../js/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+<div ng-controller="myCtrl">
+ <input type="text" ng-value="message" ng-disabled="true"/>
+</div>
+<script>
+
+var app = angular.module('myApp',[])
+
+app.controller('myCtrl',function($scope){
+ $scope.message ='Hello world!';	
+})
+
+</script>
+
+  
+</body>
+</html>

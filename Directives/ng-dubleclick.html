@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="../js/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+<div ng-controller="myCtrl">
+
+<button ng-Dblclick="clicked()">Click Me</button>
+
+ <!-- {{firstName}} -->
+</div>
+
+<script>
+
+var app  = angular.module('myApp',[]);
+
+app.controller('myCtrl',function($scope){
+	$scope.clicked = function(){
+		alert('safds')
+		}
+	
+	})
+	
+	
+	
+
+</script>
+  
+</body>
+</html>
+

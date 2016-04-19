@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="../js/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+<div ng-controller="myCtrl">
+ <button ng-mousemove="aa()">Mousemove on me</button>
+ 
+ 
+</div>
+<script>
+
+var app = angular.module('myApp',[])
+app.controller('myCtrl',function($scope){
+	
+$scope.aa = function(){
+	 alert('Its working!')
+	}
+	
+	})
+        
+</script>
+</body>
+</html>

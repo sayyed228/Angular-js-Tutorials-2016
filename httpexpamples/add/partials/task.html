@@ -1,0 +1,8 @@
+<div class="input-group" ng-controller="tasksController">
+    <input type="text" class="form-control" ng-model="taskInput" placeholder="Add tasks">
+    <input type="text" class="form-control" ng-model="status" placeholder="status">
+    <div class="input-group-btn">
+      <button class="btn btn-default" type="submit" ng-click="addTask(taskInput,status)">&nbsp;Add New Task</button>
+    </div>
+  </div>
+

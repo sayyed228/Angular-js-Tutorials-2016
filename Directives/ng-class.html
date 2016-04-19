@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="../js/angular.min.js"></script>
+<style>
+
+
+</style>
+</head>
+
+<body ng-app="myApp">
+<div ng-controller="myCtrl">
+ <button ng-click="clicked()">asdf</button>
+ 
+ <div class="" style="border:red solid 1px;">
+ </div>
+ 
+</div>
+
+<script>
+
+var app = angular.module('myApp',[])
+ app.controller('myCtrl',function($scope){
+	 $scope.clicked = function(){
+		 $scope.red ='red'
+		 }
+})
+
+</script>
+  
+</body>
+</html>
+

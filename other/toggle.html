@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<script src="angular.min.js"></script>
+<style>
+
+body { margin:20px; font-size:20px;}
+</style>
+<body ng-app="myApp">
+
+
+<div ng-controller="myCtrl">
+
+<button ng-mouseenter="myFunc()">Click Me!</button>
+
+<div ng-show="showMe">
+    <h1>Menu:</h1>
+    <div>Pizza</div>
+    <div>Pasta</div>
+    <div>Pesce</div>
+</div>
+
+
+</div>
+<!-- 
+
+
+ng-mouseover
+ng-mousemove
+ng-mouseleave
+
+-->
+<script>
+
+
+var app = angular.module('myApp',[]);
+app.controller('myCtrl',function($scope){
+
+ $scope.showMe = false;
+    $scope.myFunc = function() {
+        $scope.showMe = !$scope.showMe;
+    }
+	
+	})
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{{firstName}}</title>
+<script src="angular.min.js"></script>
+</head>
+
+<body ng-app="">
+<div  ng-model="Names=[{firstName:'Nazir',lastName:'Sayyed'},{firstName:'Arif',lastName:'Shaikh'}]">
+ {{Names.firstName}}
+ <ul>
+ <li ng-repeat="x in Names">
+  {{x.firstName }}
+ </li>
+ </ul>
+</div>
+<script>
+
+/*
+var app = angular.module('myApp',[]);
+
+ app.controller('myCtrl',function($scope){
+	 $scope.firstName = 'Nazir';
+	 $scope.lastName  = 'Sayyed';
+	 
+	 }) 
+*/
+
+</script>
+</body>
+</html>

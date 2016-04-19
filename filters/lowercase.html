@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+<meta charset="utf-8">
+<title></title>
+<script src="../js/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+
+<div  ng-controller="myCtrl">
+
+<p>The name is {{ firstName | lowercase }}</p>
+
+</div>
+
+<script>
+
+var app = angular.module('myApp',[]);
+
+app.controller('myCtrl',function($scope){
+ $scope.firstName ='Nazir'
+})
+
+</script>
+</body>
+</html>
+
